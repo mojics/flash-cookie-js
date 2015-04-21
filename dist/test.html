@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Sample implementation</title>
+</head>
+<body>
+
+<script type="text/javascript" src="flash.cookie.min.js"></script>
+<script type="text/javascript">
+    FlashCookie.onReady(function (cookie) {
+      cookie.set("key1", "you can see me in any where");
+      cookie.set("key2", "me too!");
+
+      console.log(cookie.get("key1"));    // "you can see me in any where"
+
+      cookie.remove("key1");
+
+      console.log(cookie.get("key1"));    // undefined
+      console.log(cookie.get("key2"));    // "me too! "
+
+      cookie.clear();
+
+      console.log(cookie.get("key2"));    // undefined
+    });
+</script>
+</body>
+</html>

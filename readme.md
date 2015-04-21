@@ -12,24 +12,21 @@ JavaScript interface library to manage persistent cross-browser Flash cookies.
 ## Example
 
 ```html
+<html>
+<head>
+    <title>Flash Cookie sample</title>
+</head>
+<body>
 <script type="text/javascript" src="flash-cookie.min.js"></script>
 <script type="text/javascript">
     FlashCookie.onReady(function (cookie) {
-        cookie.set("key1", "value1");
-        cookie.set("key2", "value2");
+        cookie.set("key1", "you can see me in any browser");
+        cookie.set("key2", "me too!");
 
-        console.log(cookie.get("key1"));    // "value1"
-
-        cookie.remove("key1");
-
-        console.log(cookie.get("key1"));    // undefined
-        console.log(cookie.get("key2"));    // "value2"
-
-        cookie.clear();
-
-        console.log(cookie.get("key2"));    // undefined
     });
 </script>
+</body>
+</html>
 ```
 
 ## License

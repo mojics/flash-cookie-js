@@ -4,16 +4,16 @@
 //
 // Copyright © 2013 Faisalman <fyzlman@gmail.com>
 // Dual licensed under GPLv2 & MIT
-
-;(function (window) {
+(function (window) {
     'use strict';
-    var movieName = 'FlashCookie';
-    var movieURL = 'FlashCookie.swf';
-    var ready = new CustomEvent('ready', {});
-    var object = document.createElement('object');
-    var param1 = document.createElement('param');
-    var param2 = document.createElement('param');
-    var embed = document.createElement('embed');
+    var movieName = 'FlashCookie',
+        movieURL = 'FlashCookie.swf',
+        ready = new CustomEvent('ready', {}),
+        object = document.createElement('object'),
+        param1 = document.createElement('param'),
+        param2 = document.createElement('param'),
+        embed = document.createElement('embed');
+        
     object.id = movieName;
     object.width = '600';
     object.height = '400';
