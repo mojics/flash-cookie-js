@@ -4,9 +4,9 @@ JavaScript interface library to manage persistent cross-browser Flash cookies.
 
 ## Method
 
-* get(key)
-* set(key, value)
-* remove(key)
+* get(key) - supplied with the key, this function will return a designated value
+* set(key, value) - to set new value on your flash cookie session
+* remove(key) 
 * clear()
 
 ## Example
@@ -22,7 +22,6 @@ JavaScript interface library to manage persistent cross-browser Flash cookies.
     FlashCookie.onReady(function (cookie) {
         cookie.set("key1", "you can see me in any browser");
         cookie.set("key2", "me too!");
-
     });
 </script>
 </body>
